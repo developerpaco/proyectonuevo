@@ -25,22 +25,22 @@ header {
     height: 100px;
     transition: 0.5s;
 
-}
+} 
 
 #Header ul li ul{
-  /* background-color: white; */
+  background-color: white; 
 	width			: 225px;
 	max-height		: 0;
-	/* overflow		: hidden; */  
+	overflow		: hidden;   
 	transition		: all .3s;
   list-style: none;
   display: none;
 }
 
-#menu li:hover > ul > li > ul {
+#Header ul li:hover ul {
 
-	max-height	: 500px;
-	overflow	: visible; 
+	height	: 75px;
+	overflow	: visible;  
   display: block;
 
 }
@@ -79,7 +79,7 @@ header {
     color: var(--main-color);
 }
 
-/*  */
+
 
 
 .menu-item li ul li {
@@ -105,9 +105,9 @@ nav > ul > li > ul {
 	overflow	: visible;
 
 }
-/**/
 
-/* 
+
+
 .navigation {
     height: 70px;
     background: #72e0d1;
@@ -176,7 +176,7 @@ nav > ul > li > ul {
     height: 70px;
     width: 100%;
   }
-   */
+   
   @media screen and (max-width: 979px) {
     .nav-movil {
       display: block;
@@ -259,10 +259,7 @@ nav > ul > li > ul {
 
 
 
-  /* body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: white;
-} */
+
 h1 {
 	height: 40px;
   color: #4656B3;
@@ -415,4 +412,4 @@ h3 {
   .formulario textarea:focus{
 	outline:0;
 	border: 1px solid #97d848;
-  }
+  } 
