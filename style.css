@@ -27,6 +27,24 @@ header {
 
 }
 
+#Header ul li ul{
+  /* background-color: white; */
+	width			: 225px;
+	max-height		: 0;
+	/* overflow		: hidden; */  
+	transition		: all .3s;
+  list-style: none;
+  display: none;
+}
+
+#menu li:hover > ul > li > ul {
+
+	max-height	: 500px;
+	overflow	: visible; 
+  display: block;
+
+}
+
 .logo {
     
     height: 200px;
@@ -35,6 +53,7 @@ header {
 }
 
 .main-menu{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +62,19 @@ header {
 
 }
 .menu-item{
+
     margin: 0 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: 0.5s;
     color: #0b0a0a;
-}
+} 
 
+.menu-item{
+  margin: 0 0.4rem;
+  font-weight: 300;
+  cursor: pointer;
+}
 .menu-item:hover{
     color: var(--main-color);
 }
@@ -57,6 +82,32 @@ header {
 /*  */
 
 
+.menu-item li ul li {
+	
+	background-color: white;
+	width			: 225px;
+	max-height		: 0;
+	overflow		: hidden;
+	transition		: all .3s;
+	list-style		: none;
+	
+}
+
+nav > ul > li > ul {
+	
+	top: 100%;
+	
+}
+
+.menu-item li:hover > ul > li {
+
+	max-height	: 500px;
+	overflow	: visible;
+
+}
+/**/
+
+/* 
 .navigation {
     height: 70px;
     background: #72e0d1;
@@ -88,7 +139,7 @@ header {
     padding: 0 20px;
     line-height: 70px;
     color: black;
-   /*  color: #72e0d1; */
+   
     text-decoration: none;
   }
   
@@ -125,7 +176,7 @@ header {
     height: 70px;
     width: 100%;
   }
-  
+   */
   @media screen and (max-width: 979px) {
     .nav-movil {
       display: block;
